@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>SmartMark Attendance</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<h1 class="main-title">SmartMark Attendance System</h1>
+
+
+<div class="container">
+
+
+<!-- LEFT PANEL -->
+
+<div class="left-panel">
+
+
+<label>Student ID</label>
+
+<input type="text" id="studentId">
+
+
+<div class="date-box">
+
+<p id="date"></p>
+
+<p id="day"></p>
+
+</div>
+
+
+
+<h3>Select Slot</h3>
+
+
+
+<div class="table-container">
+
+
+<table class="slot-table">
+
+
+<tr>
+
+<th>Select</th>
+
+<th>Subject</th>
+
+<th>Time</th>
+
+</tr>
+
+
+<tr>
+
+<td><input type="radio" name="slot" value="TEST-P1"></td>
+
+<td>Testing</td>
+
+<td>10 PM – 11 PM</td>
+
+</tr>
+
+
+<tr>
+
+<td><input type="radio" name="slot" value="MATH-P1"></td>
+
+<td>Math</td>
+
+<td>9 AM – 10 AM</td>
+
+</tr>
+
+
+<tr>
+
+<td><input type="radio" name="slot" value="PHY-P1"></td>
+
+<td>Physics</td>
+
+<td>10 AM – 11 AM</td>
+
+</tr>
+
+
+<tr>
+
+<td><input type="radio" name="slot" value="BIO-P1"></td>
+
+<td>Biology</td>
+
+<td>11 AM – 12 PM</td>
+
+</tr>
+
+
+<tr>
+
+<td><input type="radio" name="slot" value="CHEM-P1"></td>
+
+<td>Chemistry</td>
+
+<td>1 PM – 2 PM</td>
+
+</tr>
+
+
+<tr>
+
+<td><input type="radio" name="slot" value="CLOUD-P1"></td>
+
+<td>Cloud</td>
+
+<td>2 PM – 3 PM</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- RIGHT PANEL -->
+
+
+<div class="right-panel">
+
+
+<video id="video" autoplay></video>
+
+
+<button onclick="capture()">Submit Attendance</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="result-box">
+
+<p id="result"></p>
+
+</div>
+
+
+
+
+<!-- POPUP -->
+
+
+<div id="popup" class="popup">
+
+
+<div class="popup-content">
+
+
+<h2>Attendance Marked Successfully</h2>
+
+
+<p>You are marked present</p>
+
+
+<button onclick="closePopup()">OK</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>

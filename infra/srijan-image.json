@@ -1,0 +1,6 @@
+{
+  "S3Object": {
+    "Bucket": "smartmark-attendance-bucket",
+    "Name": "srijan.jpg"
+  }
+}

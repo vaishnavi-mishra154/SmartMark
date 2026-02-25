@@ -1,0 +1,6 @@
+{
+  "slot_id": {"S": "TEST-P1"},
+  "subject": {"S": "Testing"},
+  "start_time": {"S": "22:00"},
+  "end_time": {"S": "23:00"}
+}
